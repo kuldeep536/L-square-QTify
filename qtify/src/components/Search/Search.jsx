@@ -13,7 +13,7 @@ const Listbox = styled("ul")(({ theme }) => ({
   padding: 0,
   position: "absolute",
   borderRadius: "0px 0px 10px 10px",
-  border: "1px solid var(--color-primary)",
+  border: "1px solid #121212",
   top: 60,
   height: "max-content",
   maxHeight: "500px",
@@ -23,7 +23,7 @@ const Listbox = styled("ul")(({ theme }) => ({
   bottom: 0,
   right: 0,
   listStyle: "none",
-  backgroundColor: "var(--color-black)",
+  backgroundColor: "black",
   overflow: "auto",
   "& li.Mui-focused": {
     backgroundColor: "#4a8df6",
