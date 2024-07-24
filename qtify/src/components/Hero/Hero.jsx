@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import { colors } from "@mui/material";
+//import { colors } from "@mui/material";
 
 function Hero() {
   return (
@@ -12,7 +12,6 @@ function Hero() {
       <div>
         <img
           src={require("../../assets/headphones.png")}
-          width={212}
           alt="headphones"
         />
       </div>
