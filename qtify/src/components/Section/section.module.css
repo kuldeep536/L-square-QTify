@@ -1,0 +1,53 @@
+/* .topAlbumsTex{
+    width: 122px;
+    height: 30px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color:  #FFFFFF;
+}
+
+.ShowAll{
+    margin-left: 1291px;
+    width: 85px;
+    height: 30px;
+    font-family: Poppins;
+    font-weight: 600;
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+    color: #34C94B ; 
+}
+
+.CustomContainer{
+  width: re; 
+  height: 592px; 
+  /* margin-top: 368px;  */
+  /* margin-left: 31px;  */
+  /* display: flex;  */
+  /* gap: 32px;
+  background-color: black;
+} */ 
+
+.wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header {
+    margin-inline: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.toggleText {
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.cardWrapper {
+    margin-top: 18px;
+}
