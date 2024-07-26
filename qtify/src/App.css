@@ -1,4 +1,4 @@
-/* .App {
+ .App {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
   to {
     transform: rotate(360deg);
   }
-} */
+} 
 .divider {
   border: 1px solid var(--color-primary);
   margin-block: 30px;
