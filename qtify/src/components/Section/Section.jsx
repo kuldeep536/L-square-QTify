@@ -23,17 +23,17 @@ function Section({data , title}){
             <CircularProgress />
             : (
                 <div className={styles.cardWrapper}>
-                    {!showAllBtn ?
+                    {/* {!showAllBtn ? */}
                         <div className={styles.wrapper}>
                             {data.map((item) => <Cart key={item.id} cartData={item} type="album" />)}
                         </div>
-                        :
-                        // <Carousel
-                        //     data={data}
+                        {/* : */}
+                        {/* // <Carousel */}
+                        {/* //     data={data}
                         //     componentRender={(ele) => <Card data={ele} type="album" />}
                         // /> 
                         null
-                    }
+                    } */}
                 </div>
             )
 
