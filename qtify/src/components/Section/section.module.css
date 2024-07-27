@@ -34,6 +34,9 @@
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
+    width: 1384px;
+    height: 232px;
+    margin-left: 12px;
 }
 
 .header {
@@ -45,7 +48,7 @@
 
 .toggleText {
     cursor: pointer;
-    color: var(--color-primary);
+    color: #34C94B;
 }
 
 .cardWrapper {
