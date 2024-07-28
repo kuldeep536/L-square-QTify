@@ -30,7 +30,7 @@ function Navbar({songs}) {
   return (
     <nav className={styles.navbar}>
       <Logo />
-        <Search songs={songs} placeholder={"Search a album of your choice"} />
+        <Search songs={songs}  />
         <Button TextToShow={"Give Feedback"} />
     </nav>
   );

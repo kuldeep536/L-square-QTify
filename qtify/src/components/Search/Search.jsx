@@ -11,7 +11,7 @@ const SearchDiv = ({ data }) => {
 const Search = ({ songs }) => {
     return (
         <div className={styles.wrapper}>
-            <div className={styles.searchBoxWrapper}>
+            <div >
                 <Autocomplete
                     className={styles.search}
                     freeSolo
@@ -23,7 +23,7 @@ const Search = ({ songs }) => {
                             variant='filled'
                             className={styles.searchBox}
                             {...params}
-                            placeholder='Search'
+                            label="Search input"
                             InputProps={{
                                 ...params.InputProps,
                                 type: 'search',
