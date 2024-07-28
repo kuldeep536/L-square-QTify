@@ -6,6 +6,7 @@ import { CircularProgress } from '@mui/material';
 import Carousel from "../Carousel/Carsousel";
 
 function Section({data , title}){
+    console.log(data)
     const [showAllBtn , setShowAllBtn] = useState(true); 
    
     const handleBtn = ()=>{
@@ -31,7 +32,7 @@ function Section({data , title}){
                       : 
                          <Carousel 
                              data={data}
-                       componentRender={(ele) => <Cart data={ele} type="album" />}
+                       componentRender={(ele) => <Cart data={ele} type="songs" />}
                         /> 
                     
                      }

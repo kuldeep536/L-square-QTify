@@ -20,4 +20,14 @@ async function NewAlbumDataFetch(){
         throw new Error("Error from fetching New Album data", error)
     }
 }
-export {TopAlbumDataFetch , NewAlbumDataFetch}
+ 
+async function SongsFetch(){
+    try{
+        let response = await axios.get(`${Backend_Link}/songs`); 
+        console.log(response.data); 
+        return response.data ; 
+    }catch(error){
+        throw new Error("Error while fetching Songs data", error)
+    }
+}
+export {TopAlbumDataFetch , NewAlbumDataFetch ,SongsFetch}

@@ -6,6 +6,7 @@ import { CarouselRightNavigation } from './CarouselRightNavigation';
 import 'swiper/css'
 
 const Carousel = ({ data, componentRender }) => {
+   // console.log(data,componentRender)
     const Controls = ({ data }) => {
         const swiper = useSwiper(data, componentRender);
         useEffect(() => {

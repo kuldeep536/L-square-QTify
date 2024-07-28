@@ -26,11 +26,11 @@ import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import styles from "./Navbar.module.css";
 
-function Navbar() {
+function Navbar({songs}) {
   return (
     <nav className={styles.navbar}>
       <Logo />
-        <Search placeholder={"Search a album of your choice"} />
+        <Search songs={songs} placeholder={"Search a album of your choice"} />
         <Button TextToShow={"Give Feedback"} />
     </nav>
   );
