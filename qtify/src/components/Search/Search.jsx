@@ -23,7 +23,7 @@ const Search = ({ songs }) => {
                             variant='filled'
                             className={styles.searchBox}
                             {...params}
-                            label="search a song"
+                            placeholder="search a song"
                             InputProps={{
                                 ...params.InputProps,
                                 type: 'search',
