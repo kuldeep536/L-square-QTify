@@ -25,7 +25,7 @@ function Section({data , title}){
             <CircularProgress />
             : (
                 <div className={styles.cardWrapper}>
-                    {showAllBtn ?
+                    {!showAllBtn ?
                         <div className={styles.wrapper}>
                             {data.map((item) => <Cart key={item.id} cartData={item} type="album" />)}
                         </div>
