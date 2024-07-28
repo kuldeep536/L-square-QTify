@@ -3,6 +3,7 @@ import styles from "./section.module.css" ;
 import Cart from "../Card/Card";
 import { useState } from "react";
 import { CircularProgress } from '@mui/material';
+import Carousel from "../Carousel/Carsousel";
 
 function Section({data , title}){
     const [showAllBtn , setShowAllBtn] = useState(true); 
@@ -23,17 +24,17 @@ function Section({data , title}){
             <CircularProgress />
             : (
                 <div className={styles.cardWrapper}>
-                    {/* {!showAllBtn ? */}
+                    {!showAllBtn ?
                         <div className={styles.wrapper}>
                             {data.map((item) => <Cart key={item.id} cartData={item} type="album" />)}
                         </div>
-                        {/* : */}
-                        {/* // <Carousel */}
-                        {/* //     data={data}
-                        //     componentRender={(ele) => <Card data={ele} type="album" />}
-                        // /> 
-                        null
-                    } */}
+                      : 
+                         <Carousel 
+                             data={data}
+                       componentRender={(ele) => <Cart data={ele} type="album" />}
+                        /> 
+                    
+                     }
                 </div>
             )
 
