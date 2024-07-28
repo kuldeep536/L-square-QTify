@@ -17,7 +17,7 @@ function Section({data , title}){
     <div className={styles.header}>
         <h3>{title}</h3>
         {title && <h4 className={styles.toggleText} onClick={handleBtn}>
-            {showAllBtn ? "Show All" : "collapse All"}
+            {showAllBtn ? "Show all" : "collapse"}
         </h4>}
     </div>
     {
