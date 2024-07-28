@@ -19,12 +19,11 @@ const Search = ({ songs }) => {
                     disableClearable
                     options={songs.map((option) => option.title)}
                     renderInput={(params) => (
-                        <input
-                           
+                        <TextField
                             variant='filled'
                             className={styles.searchBox}
                             {...params}
-                            placeholder='search a song'
+                            label="search a song"
                             InputProps={{
                                 ...params.InputProps,
                                 type: 'search',
