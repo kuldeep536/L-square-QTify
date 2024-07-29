@@ -7,7 +7,7 @@ import Carousel from "../Carousel/Carsousel";
 
 function Section({data , title}){
     console.log(data)
-    const [showAllBtn , setShowAllBtn] = useState(false); 
+    const [showAllBtn , setShowAllBtn] = useState(true); 
    
     const handleBtn = ()=>{
         setShowAllBtn(!showAllBtn)
