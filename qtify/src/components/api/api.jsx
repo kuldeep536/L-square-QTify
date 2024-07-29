@@ -20,6 +20,22 @@ async function NewAlbumDataFetch(){
         throw new Error("Error from fetching New Album data", error)
     }
 }
+
+async function fetchGenreList(){
+    try{
+        const allObj = {
+            key: "all",
+            label: 'All'
+        }
+        const res = await axios.get(`${Backend_Link}/genres`);
+        const genreData = res.data.data;
+        genreData.unshift(allObj);
+        console.log(genreData)
+        return genreData;
+    } catch (err){
+        console.log(err);
+    }
+}
  
 async function SongsFetch(){
     try{
@@ -30,4 +46,4 @@ async function SongsFetch(){
         throw new Error("Error while fetching Songs data", error)
     }
 }
-export {TopAlbumDataFetch , NewAlbumDataFetch ,SongsFetch}
+export {TopAlbumDataFetch , NewAlbumDataFetch ,SongsFetch ,fetchGenreList}

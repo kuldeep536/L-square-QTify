@@ -32,10 +32,11 @@ function Section({data , title}){
                       : 
                          <Carousel 
                              data={data}
-                       componentRender={(ele) => <Cart data={ele} type="songs" />}
+                       componentRender={(ele) => <Cart cartData={ele} type="album" />}
                         /> 
                     
                      }
+                     
                 </div>
             )
 
